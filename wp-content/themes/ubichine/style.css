@@ -1,0 +1,614 @@
+/*
+Theme Name: Ubichine
+Author: Jean ZHANG
+Author URI: http://www.ubichine.com
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font:inherit; }
+a { text-decoration:none; outline: none; }
+li { list-style: none; }
+img { border:0; }
+*:focus{ outline:0; }
+
+/*
+@font-face {
+	font-family: "myriad";
+	src: url('/wp-content/themes/ubichine/fonts/myriadpro-semibold.eot');
+	src: url('/wp-content/themes/ubichine/fonts/myriadpro-semibold.eot#iefix') format('embedded-opentype'),
+		 url('/wp-content/themes/ubichine/fonts/myriadpro-semibold.woff') format('woff'), 
+         url('/wp-content/themes/ubichine/fonts/myriadpro-semibold.ttf') format('truetype'); 
+	font-weight: regular;
+	font-style: normal;
+}
+*/
+
+/* ======== General ======== */
+
+img {
+	width: 100%;
+	height: auto;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+b {
+	font-weight: bold;
+}
+
+u {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+.relative {
+	position: relative;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", "微软雅黑", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+	background-color: #eee;
+	color: #111;
+	letter-spacing: 0.05em;
+}
+
+.outer-wrap {
+	width: 100%;
+	max-width: 1460px;
+	margin: 0 auto;
+}
+
+.inner-wrap {
+	width: 100%;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+#info-404 {
+	font-size: 24px;
+	padding: 160px 0 240px 0;
+	text-align: center;	
+	color: #999;
+}
+
+@media screen and (max-width: 560px) {
+	.inner-wrap {
+		padding: 0 20px;
+	}
+}
+
+/* ======== Header ======== */
+#header-deco {
+	width: 379px;
+	height: 106px;
+	background-image: url(/wp-content/themes/ubichine/images/deco-header.png);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#header-name {
+	text-align: center;
+	margin-top: 80px;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+}
+
+#header-title {
+	display: block;
+	width: 326px;
+	height: 94px;
+	background-image: url(/wp-content/themes/ubichine/images/portfolio.png);
+	background-size: 326px 94px;
+	margin: 80px auto 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+	#header-name {
+		margin-top: 60px;
+	}
+
+	#header-title {
+		width: 240px;
+		height: 69px;
+		background-size: 240px 69px;
+		margin: 60px auto 0 auto;
+	}
+}
+
+
+/* ======== Footer ======== */
+#footer {
+	background-color: #000;
+	padding: 120px 0 100px 0;
+	position: relative;
+	margin-top: 180px;
+}
+
+#footer a {
+	color: #999;
+}
+
+#footer::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 400px;
+	max-width: 50%;
+	height: 40px;
+	background-image: url(/wp-content/themes/ubichine/images/deco-footer.png);
+	background-size: 400px 40px;
+}
+
+.footer-content-col {
+	float: left;
+	width: 30%;
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	margin-left: 5%;
+}
+
+.footer-content-col:first-child {
+	margin-left: 0;
+}
+
+.footer-content-col p {
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+
+#footer-content-cn {
+	color: #ccc;
+}
+
+#footer-content-en {
+	color: #666;
+}
+
+#footer input, #footer textarea {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	
+	font-size: 1em;
+	font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", "微软雅黑", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#footer textarea {
+	padding: 10px;
+}
+
+
+#footer label.wpforms-error {
+	margin-top: 10px;
+	color: #fff;
+}
+
+#footer .wpforms-confirmation-container-full p {
+	
+}
+
+#footer-wechat {
+	width: 108px;
+	margin: 0 auto;
+}
+
+#footer-copyright {
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	line-height: 24px;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	#footer {
+		padding: 80px 0 60px 0;
+		margin-top: 100px;
+	}
+	
+	.footer-content-col {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 50px;
+	}
+}
+
+
+/* ======== HomePage ======== */
+#projects-list-ink-deco {
+	width: 80px;
+	height: 80px;
+	background-image: url(/wp-content/themes/ubichine/images/ink.png);
+	background-size: 80px 80px;
+	margin: 80px auto 0 auto;
+	opacity: 0.8;
+}
+
+.projects-list-nav {
+	display: none;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.projects-list-nav div {
+	display: inline-block;	
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	background-size: 14px 28px;
+	margin: 0 20px;
+}
+
+.projects-list-nav-zoomin {
+	background-image: url(/wp-content/themes/ubichine/images/icon-large.png);
+}
+
+.projects-list-nav-zoomout {
+	background-image: url(/wp-content/themes/ubichine/images/icon-small.png);
+}
+
+#projects-list {
+	margin-left: -1.5%;
+	margin-top: 100px;
+	margin-bottom: -1.5%;
+}
+
+.projects-list-item {
+	display: block;
+	float: left;
+	width: 18.5%;
+	margin-left: 1.5%;
+	margin-bottom: 1.5%;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 3px #999999;
+}
+
+.projects-list-item-image {
+	line-height: 0;
+}
+
+.projects-list-item-text {
+	position: relative;
+	padding: 15px 5% 20px 5%;
+}
+
+.projects-list-item-title-cn {
+	font-size: 14px;
+	color: #333;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.projects-list-item-title-en {
+	font-size: 12px;
+	color: #bbb;
+	margin-top: 4px;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.projects-list-item-views {
+	position: absolute;
+	right: 5%;
+	bottom: 5px;
+	font-size: 12px;
+	color: #fff;
+}
+
+#projects-list.small {
+	margin-left: -1.25%;
+	margin-bottom: -1.25%;	
+}
+
+#projects-list.small .projects-list-item {
+	width: 11.25%;
+	margin-left: 1.25%;
+	margin-bottom: 1.25%;
+	border-radius: 0;
+	box-shadow: 0 0 3px #aaa;
+}
+
+#projects-list.small .projects-list-item-text {
+	display: none;
+}
+
+#projects-list.small .projects-list-item-image {
+	border: 4px solid #fff;
+}
+
+@media screen and (max-width: 1280px) {
+	#projects-list {
+		margin-left: -1.8%;
+		margin-bottom: -1.8%;
+	}
+
+	.projects-list-item {
+		width: 23.2%;
+		margin-left: 1.8%;
+		margin-bottom: 1.8%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	#projects-list {
+		margin-left: -2.3%;
+		margin-bottom: -2.3%;
+	}
+
+	.projects-list-item {
+		width: 31%;
+		margin-left: 2.3%;
+		margin-bottom: 2.3%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#projects-list {
+		margin-left: -3%;
+		margin-bottom: -3%;
+	}
+
+	.projects-list-item {
+		width: 47%;
+		margin-left: 3%;
+		margin-bottom: 3%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#projects-list-ink-deco {
+		width: 80px;
+		height: 80px;
+		background-size: 80px 80px;
+		margin: 60px auto 0 auto;
+	}
+	
+	#projects-list {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#projects-list {
+		margin-left: 0;
+		margin-bottom: -5%;
+	}
+
+	.projects-list-item {
+		float: none;
+		width: 100%;
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+	}
+}
+
+
+
+
+/* ======== Single Project ======== */
+.single-project-nav {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.single-project-nav div {
+	display: inline-block;	
+}
+
+.single-project-nav div a {
+	display: block; 
+	position: relative;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	background-size: 12px 24px;
+}
+
+.single-project-nav-left a {
+	background-image: url(/wp-content/themes/ubichine/images/icon-left.png);
+}
+
+.single-project-nav-center a {
+	background-image: url(/wp-content/themes/ubichine/images/icon-close.png);
+}
+
+.single-project-nav-right a {
+	background-image: url(/wp-content/themes/ubichine/images/icon-right.png);
+}
+
+.single-project-nav-center {
+	margin: 0 60px;
+}
+
+.single-project-nav-disabled {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+#single-project-content { 
+	position: relative;
+	margin-top: 100px;
+}
+
+#single-project-images {
+	width: 50%;
+	max-width: 640px;
+	float: left;
+}
+
+.single-project-image {
+	padding: 12px 12px;
+	background-size: 100% 100%;
+	margin-top: 30px;
+}
+
+.black-border .single-project-image {
+	background-image: url(/wp-content/themes/ubichine/images/image-bg.png);
+}
+
+.white-border .single-project-image {
+	background-image: url(/wp-content/themes/ubichine/images/image-bg-b.png);
+}
+
+.single-project-image:first-child {
+	margin-top: 0;
+}
+
+.single-project-image-src {
+	line-height: 0;
+}
+
+/*
+#single-project-texts {
+	float: left;
+	padding-left: 60px;
+	font-size: 14px;
+	line-height: 24px;
+}
+*/
+#single-project-texts {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	font-size: 14px;
+	line-height: 24px;
+	box-sizing: border-box;
+}
+
+#single-project-texts-rows {
+	width: calc(100% - 60px);
+	position: absolute;	
+	left: 60px;
+	top: 10px;
+}
+
+#single-project-texts-rows.middle {
+	position: fixed;
+	margin-left: 50%;
+	top: 10px;
+}
+
+#single-project-texts-rows.end {
+	top: auto;
+	bottom: 10px;
+}
+
+#single-project-texts-logo {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: -1px;
+}
+
+#single-project-texts-logo img {
+	width: auto;
+}
+
+#single-project-texts-footer-link {
+	margin-bottom: 5px;
+}
+
+#single-project-texts-footer-link a {
+	color: inherit;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #999;	
+	transition: color 0.5s ease;
+}
+
+#single-project-texts-footer-link a:hover {
+	color: #d4ae37;
+	border-bottom: 1px dotted #d4ae37;
+}
+
+.single-project-texts-row {	
+	margin-bottom: 20px;	
+}
+
+.single-project-cn, .single-project-en {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.single-project-en {
+	color: #999;
+}
+
+@media screen and (max-width: 768px) {
+	#single-project-images {
+		float: none;
+		width: 100%;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	
+	#single-project-texts {
+		position: static;
+		width: 100%;
+		max-width: 640px;
+		margin: 60px auto 0 auto;
+		padding: 0 12px;
+		box-sizing: border-box;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #999;
+	}
+	
+	#single-project-texts-rows {
+		width: 100%;
+		position: static;	
+	}
+
+	#single-project-texts-rows.middle {
+		position: static;
+		margin-left: 0;
+	}
+
+	#single-project-texts-logo {
+		margin-left: 0;
+		padding-bottom: 24px;
+		border-bottom: 1px solid #999;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.single-project-nav {
+		margin-top: 72px;
+	}
+
+	.single-project-nav-center {
+		margin: 0 50px;
+	}
+
+	#single-project-content {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 375px) {	
+	.single-project-image {
+		padding: 8px;
+		margin-top: 20px;
+	}
+}
